@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/website.css">
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section id="banner">
+            <img src="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/NTECH.png" class="logo">
+            <div class="banner-text">
+                <h1>Creating Better ICT Solutions & Training</h1>
+                <p>NTECH Solutions is an ICT Repair and Maintenance Organization and Training Centre for women by women situated in the Coastal Region of Kenya.</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>About Us</a>
+                    <a href="#"><span></span>Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="WEBSITE.html" target="_blank">Home</a></li>
+                    <li><a href="Training Center.html" target="_blank">Training Center</a></li>
+                    <li><a href="Service.html" target="_blank">Service</a></li>
+                    <li><a href="Contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <i class="fa-regular fa-bars" id="menu"></i>
+        </div>
+
+
+        <!-- ABOUT -->
+        <section id="feature">
+            <div class="title-text">
+                <h1>Training Center</h1>
+                <p>--Why Choose US</p>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1><bold>N-TECH Training Centre</bold></h1>
+                    <div class="features-desc">
+                        <div class="feature-text">
+                            <p>N-TECH Solutions is an ICT repair and maintenance training organization for women by women.</p>
+                            <p>Founded in 2020, N-TECH Solutions has been providing a safe space and maintain privacy of digital content for ladies especially those who are not culturally comfortable to have their digital devices repaired by male technicians, and to enlighten our clients on improving their businesses and lifestyle by adopting a secured technological way of life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-img">
+                    <img src="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/P1.png">
+                </div>
+            </div>
+        </section>
+
+        <!--SERVICE-->
+        <section id="service">
+            <div class="title-text">
+                <h1>Service</h1>
+                <p>Our Services</p>
+            </div>
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/Picture1.1.png">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Computer Repair & Maintenance</h3>
+                        <hr>
+                        <p>N-TECH provides expert onsite computer repairs and maintenance services.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/p3.png">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>ICT Skills Training</h3>
+                        <hr>
+                        <p>N-TECH offers ICT skills training to women on how to solve hardware and software problems.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/p4.png">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>ICT software and hardware Installation and support</h3>
+                        <hr>
+                        <p>We provide better quality hardware, software and network support and solutions.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="/Users/aalis.3/Documents/PROJECT-1-WEBSITE/p5.png">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Surveillance Camera Installation</h3>
+                        <hr>
+                        <p>We deliver top-notch IP surveillance cameras for various Businesses and Home applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--FOOTER-->
+<section id="footer">
+    <div class="title-text">
+        <h1>contact</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa-solid fa-clock"></i>Monday to Friday - 8Am to 5Pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p>2nd Floor - AWAKE Medical Building Makupa, along Lumumba Road<i class="fa fa-map-marker"></i></p>
+            <p>info@ntechsolutions.co.ke<i class="fa fa-paper-plane"></i></p>
+            <p>+254 725 012361<i class="fa fa-phone"></i></p>
+        </div>
+    </div>
+    <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</section>
+
+
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.i="fa-regular fa-xmark";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.i="fa-regular fa-bars";
+                }
+            }
+        </script>
+
+    </body>
+</html>
+
